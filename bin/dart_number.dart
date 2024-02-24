@@ -30,5 +30,11 @@ main()  {
   double total = myFriendCGpa + myCGpa;
   print(total);
 
+  //Type Casting er maddhome double and int er resut int e rakha jabe
+  double x = 30.45;
+  int y = 40;
+  int z = x.toInt() + y;
+  print(z);
+
 
 }
