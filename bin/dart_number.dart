@@ -23,4 +23,12 @@ main()  {
   double forthNumber = 20.30;
   double resultTwo = thirdNumber + forthNumber;
   print (resultTwo);
+
+  // double and int jog kora jay output asbe double but output int kora jabe nah
+  double myFriendCGpa = 4.50;
+  int myCGpa = 4;
+  double total = myFriendCGpa + myCGpa;
+  print(total);
+
+
 }
