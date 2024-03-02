@@ -10,6 +10,14 @@ main() {
   print(isStudent);
   print(isEmployee);
 
+  bool isEven(int number) {
+    return number % 2 == 0;
+  }
+
+  print(isEven(6)); // true
+  print(isEven(5)); // false
+
+
 }
 
 
