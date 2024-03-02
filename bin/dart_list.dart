@@ -19,6 +19,8 @@ main() {
   print(studentList);
   studentList.removeWhere((item) => item == 'Murad'); // ek e value list er moddhe jotobar thakbe sob koytay remove kore dibe
   print(studentList);
+  studentList.sort(); // accending korar jonno
+  print(studentList);
 
 
 
