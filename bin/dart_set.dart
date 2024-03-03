@@ -7,4 +7,7 @@ main() {
   Set<int> studentNoList = { 1,2,3,6,7,7,9,12,456,456,502 };
   print(studentNoList);
 
+  print(studentNoList.elementAt(3)); // set er kono index k access korte hobe only elementAt diye korte hobe
+
+
 }
