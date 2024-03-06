@@ -1,5 +1,6 @@
 main() {
 
+// ekta type theke r ekta type e casting korak type casting bole
 int firstNum = 12;
 
 double secondNum = 12.5076;
