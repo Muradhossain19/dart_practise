@@ -12,17 +12,21 @@ main() {
 
   for ( int i=0; i <= 100; i = i + 1) {
 
-    if ( i == 0){
-      continue; // 0 ta jodu show korate na chay
-    }
-    if ( i == 50) {
-      break; // jkhane ami loop ta break kore dite chay
-    }
+    // if ( i == 0){
+    //   continue; // 0 ta jodu show korate na chay
+    // }
+    // if ( i == 50) {
+    //   break; // jkhane ami loop ta break kore dite chay
+    // }
 
     print ('I Love You $i');
   }
 
   print ('Loop is Done');
+
+
+  // unlimited loop korar jonno infinite loop use korte hoy & condition ta bad diye dite hoy ba true dewa jay
+  //for ( int i=0; true ; i = i + 1) 
 
 
 
