@@ -38,7 +38,7 @@ void main() {
 
 
   Teacher cseTeacher = Teacher('Pintu', 'CSE', 28);
-  print(cseTeacher.name);
+  print(cseTeacher.age);
   
 
 
