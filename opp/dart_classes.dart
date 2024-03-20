@@ -18,7 +18,9 @@ void main() {
    studentOne.age = 27;
    studentOne.printSomething(); //method ba behaviour call kora class theke
    studentOne.playing();
-   
+   Student.institution ='DU'; // static property access korar niyom
+   print(Student.institution);
+   Student.doAnything();
 
 
 
@@ -53,6 +55,16 @@ class Student {
   String name = '';
   String address = '';
   int age = 0;
+
+  // Static Data Type Class er kono object er sathe relation rakhe nah,
+  // Eta k access korar jonno class name.property diyei access korte hoy
+  // Eta ekbar change korle sobjaigai e change hobe,
+  // Eki vabe Class er vitor kono method keo static kora jay
+  // Static method e vitor shudu static property gulai access kora jabe
+  static String institution = 'Sreenagar Govt College'; 
+  static void doAnything(){
+    print('Anything');
+  }
 
   // Constructor
   Student () {
