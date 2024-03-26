@@ -1,6 +1,6 @@
 class Person{
-  String _firstName; //private
-  String _lastName;
+  final String _firstName; //private
+  final String _lastName;
   String _gender;
   int _age;
 
@@ -28,7 +28,7 @@ class Person{
   }
   
   // set keyword for setter method understanding, void ta unnecessery
-  void set setAge (int newAge){
+  set setAge (int newAge){
      if (newAge >= 12 && newAge < 100) {
       _age = newAge;
      }
