@@ -1,8 +1,8 @@
 class Person{
-  final String _firstName; //private
-  final String _lastName;
-  String _gender;
-  int _age;
+   String _firstName; //private
+   String _lastName;
+   String _gender;
+   int _age;
 
   Person(this._firstName, this._lastName, this._gender, this._age) {
     print(_getBirthYear());
