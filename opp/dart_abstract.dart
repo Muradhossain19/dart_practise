@@ -30,13 +30,14 @@ class PharmacyStudent extends Student{
 class LawStudent implements Student{
   @override
   void moving() {
-    // TODO: implement moving
+    print('Moving');
   }
 
   @override
   void reading() {
-    // TODO: implement reading
+    print('Reading');
   }
+  
 
 }
 
