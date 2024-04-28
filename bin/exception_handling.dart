@@ -4,6 +4,8 @@
 // Throws
 // try - catch - throw
 
+// crashlytics diye try catch monitor kora lage
+
 void main (){
 
 printer();
@@ -14,8 +16,14 @@ printer();
 void printer(){
   try{
   printHeadline();
+  } on CustomException{        // If Else er moto jodi throw custom hoy tahole custom print korbe r na hoy machine hole machine
+    print('Custom Exception');
+  } on MachineException {
+    print ('Machine Exception');
   } catch (e){
     print('Something Went Wrong : ${e.toString()}');
+  } finally {
+    print ('Always Excuted'); // Finally er code always execute hobe jodi throw try catch exception thake
   }
   printContent();
 
@@ -23,12 +31,28 @@ void printer(){
 
 
 void printHeadline(){
+  //throw MachineException();
+  //throw CustomException();
   throw Exception('Not Printing');
 
-  // ignore: dead_code
+  
   print('Printing Headline');
 }
 
 void printContent(){
   print('Printing Content');
+}
+// Custom Exception Create Korar Niyom
+class CustomException implements Exception {
+  @override
+  String toString() {
+    return 'This is our custom exception';
+}
+}
+
+class MachineException implements Exception {
+  @override
+  String toString() {
+    return 'This is our printer exception';
+}
 }
